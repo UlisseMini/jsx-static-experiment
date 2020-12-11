@@ -1,16 +1,14 @@
 import React from 'react'
+import Head from '../components/Head.jsx'
 
 const defaultTitle = 'Uli'
 
 export default function Layout ({ title, children }) {
   return (
     <html>
-      <head>
-        <meta charSet='utf-8' />
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='stylesheet' href='/styles.css' />
+      <Head>
         <title>{title || defaultTitle}</title>
-      </head>
+      </Head>
 
       <body>
         <header>
@@ -18,11 +16,11 @@ export default function Layout ({ title, children }) {
             <img src='/profile.png' alt='cute seal' className='round' />
           </a>
         </header>
+
         <main>
           {children}
         </main>
       </body>
-
     </html>
   )
 }
