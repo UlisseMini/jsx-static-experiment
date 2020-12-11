@@ -17,7 +17,6 @@ export default function Layout ({ title, children }) {
           <a href='/'>
             <img src='/profile.png' alt='cute seal' className='round' />
           </a>
-          <h1>About</h1>
         </header>
         <main>
           {children}
