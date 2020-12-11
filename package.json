@@ -1,0 +1,17 @@
+{
+  "name": "uli.rocks",
+  "version": "1.0.0",
+  "description": "Personal site",
+  "main": "build.js",
+  "repository": "https://github.com/ulissemini/uli.rocks",
+  "author": "Ulisse Mini",
+  "license": "MIT",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "esbuild": "^0.8.21",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
