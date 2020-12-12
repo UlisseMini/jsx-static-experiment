@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from '../components/Head.jsx'
+import Navbar from '../components/Navbar.jsx'
 
 const defaultTitle = 'Uli'
 
@@ -12,9 +13,7 @@ export default function Layout ({ title, children }) {
 
       <body>
         <header>
-          <a href='/'>
-            <img src='/profile.png' alt='cute seal' className='round' />
-          </a>
+          <Navbar />
         </header>
 
         <main>
